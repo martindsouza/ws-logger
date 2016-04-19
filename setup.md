@@ -2,7 +2,7 @@
 
 ## Servers
 
-You will be given a server and schema to use. Please use the one that you are assigned to resolve any conflicts.
+You will be assigned a server and schema to use. Please use the one that you are assigned to resolve any conflicts.
 
 The server setup instructions below will use `training01.oraopensource.com` along with user `ac01`, adjust accordingly.
 
@@ -29,6 +29,14 @@ port | `22`
 
 The following instructions cover how to connect to the database using SQL Developer. SQL Developer can be downloaded [here](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html). You will connect over a secure SSH connection.
 
+### Windows 7/8/10 Users
+
+If you run the version of SQL Dev with JDK included and get the following error message:
+
+![](img/sqldev_win_error.png)
+
+Read [this article](https://community.oracle.com/thread/3775616?start=0&tstart=0) on a possible solution. It recommends copying `sqldeveloper\jdk\jre\bin\msvcr100.dll` to `c:\Windows\System32\`
+
 ### SSH Configuration
 
 Click `View` > `SSH`.
@@ -43,7 +51,7 @@ Right click on the root `SSH Hosts` entry and select `New SSH Host`.
 
 ![](img/setup_new_ssh_host_1.png)
 
-Make the changes highlighted in the red boxes below.
+Make the changes highlighted in the red boxes below and click the `Ok` button to save.
 
 ![](img/setup_new_ssh_host_2.png)
 
