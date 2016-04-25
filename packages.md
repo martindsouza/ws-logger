@@ -63,7 +63,7 @@ Parameter | Description
 This procedure should update the appropriate `emp` record based on `p_empno`.
 
 - Be sure to apply the best practices template listed above.
-- Put a check in to verify that the `emp` exists. If it does not then an error should be raised.
+- **Put a check in to verify that the `emp` exists. If it does not then an error should be raised.**
 
 Once the package is completed run the following code:
 
