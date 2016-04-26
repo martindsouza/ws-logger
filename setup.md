@@ -76,4 +76,10 @@ You will be prompted for a password. Enter the SSH password that you are provide
 
 ![](img/setup_new_connection_4.png)
 
-If everything goes well you should see a `Status: Success` in the bottom left corner of the window. Click `Save` then `Connect` to connect to the schema.
+If everything goes well you should see a `Status: Success` in the bottom left corner of the window.
+
+![](img/setup_new_connection_5.png)
+
+Click `Save` then `Connect` to connect to the schema.
+
+![](img/setup_new_connection_6.png)
