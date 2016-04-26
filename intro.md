@@ -6,9 +6,9 @@ Open a new worksheet in SQL Developer.
 
 ## Install Logger
 
-Logger can be downloaded from the project’s home page: [https://github.com/OraOpenSource/logger](https://github.com/OraOpenSource/logger) To help with any connection issues a copy of the latest version, 3.1.1, will be included with this course in `/software/logger_3.1.1/`.
+Logger can be downloaded from the project’s home page: [https://github.com/OraOpenSource/logger](https://github.com/OraOpenSource/logger) To help with any connection issues a copy of the latest version, 3.1.1, is included with this course in `/software/logger_3.1.1/`.
 
-To install Logger, open a new worksheet in SQL Developer and drag & drop `logger_install.sql` into the worksheet. Hit `F5` to run the script. If everything works well you should see the following at the end of the script output:
+To install Logger, drag & drop `logger_install.sql` into the new worksheet in SQL Developer. Hit `F5` to run the script. If everything works well you should see the following at the end of the script output:
 
 ```sql
 Project Home Page        : https://github.com/oraopensource/logger/
@@ -35,7 +35,7 @@ Logging information is as simple as `logger.log('hello world');`. Try it out and
 ```sql
 declare
 begin
-  logger.log('hello world');
+  logger.log('Hello World');
 end;
 /
 ```
@@ -50,7 +50,7 @@ from logger_logs
 order by id desc;
 ```
 
-Take some time to look at all the information that is stored. You should notice quite a lot of information that is stored from a very basic call that we did in the Hello World example.
+You should notice quite a lot of information that is stored from a very basic call that was done in the `Hello World` example.
 
 You usually only need to see recent logs and as such the following query will be used throughout the rest of the workshop:
 

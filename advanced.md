@@ -38,8 +38,6 @@ begin
 end;
 /
 
-
-
 select id, logger_level, text, client_identifier, call_stack
 from logger_logs_5_min
 order by id desc;
@@ -141,4 +139,4 @@ end;
 /
 ```
 
-Now alter the above code to add another timer inside the `bar` loop (right before `logger.time_stop('bar');`), then view the output. Notice how Logger indents the timing messages.
+Alter the above code to add another timer inside the `bar` loop (right before `logger.time_stop('bar');`), then view the output. Notice how Logger indents the timing messages.

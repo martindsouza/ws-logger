@@ -63,7 +63,21 @@ Parameter | Description
 This procedure should update the appropriate `emp` record based on `p_empno`.
 
 - Be sure to apply the best practices template listed above.
-- **Put a check in to verify that the `emp` exists. If it does not then an error should be raised.**
+- **Put a check in to verify that the `emp` record exists. If it does not then an error should be raised.**
+  - _Hint: you can use `sql%rowcount` immediately following the `update` statement to see how many rows were updated._
+
+To help, use the following package spec:
+
+```sql
+create or replace package pkg_emp
+as
+  procedure update_emp(
+    p_empno in emp.empno%type,
+    p_sal in emp.sal%type,
+    p_hiredate in emp.hiredate%type);
+end pkg_emp;
+/
+```
 
 Once the package is completed run the following code:
 

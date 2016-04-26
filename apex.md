@@ -4,7 +4,17 @@ Logger has some built in features specific for APEX developers. In this section 
 
 ## Setup
 
-An application will reside in your assigned workspace. Edit and run the application.
+An application will reside in your assigned workspace. To run apex got to your assigned server in your browser. Example:
+
+-  `http://training01.oraopensource.com`
+- Workspace: `ac01`
+  - This is the same as your username
+- Username: `ac01`
+- Password: `<assigned in class>`
+
+Edit and run the application.
+
+To ensure that the correct level is set run `exec logger.set_level(logger.g_debug);` in SQL Developer.
 
 ## Log CGI Variables
 
@@ -33,6 +43,7 @@ On P1 there is a Dynamic Action (DA) called `onClick Log APEX Item`.
 - Save the page
 - Run P1
 - Edit one of the employees then click `Apply Changes` (_you don't need to make any changes_). The purpose of doing this is to register some content in Session State.
+  - _If the page takes a while to save, you may have uncommitted changes in SQL Dev. Perform a`commit` or `rollback` and the save should go through._
 - On P1 click on the `Log APEX Items` button
 
 APEX items are stored in a separate table. The following code will highlight how to find them.

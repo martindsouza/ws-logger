@@ -12,11 +12,6 @@ Name  | Description
 [APEX](apex.md) | Logger and APEX
 
 
-## References
-The following references have been included with this workshop
-
--
-PDF logger DOCS
 
 ## FAQs
 

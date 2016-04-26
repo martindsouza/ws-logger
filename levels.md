@@ -1,6 +1,6 @@
 # Logger Workshop: Levels
 
-When instrumenting your code (i.e. adding Logger statements to it) you should not have to add and remove statements while testing. You only need to add the statement once then you can configure whether or not you want to actually store the logged message via a configuration.
+When instrumenting your code (i.e. adding Logger statements to it) you should not have to add and remove statements while developing. You only need to add a statement once then you can configure whether or not you want to actually store the logged message via a configuration.
 
 This is where logging levels comes in. When calling Logger you explicitly tell it which logging level to use. The API that is used and the level that is configured will determine if the message is actually stored in the table. If the level is not configured to be written Logger immediately exits the call to help reduce performance impacts.
 
