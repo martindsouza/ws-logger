@@ -74,6 +74,8 @@ You should see a SSH Authorization confirmation window like below. Click the `Ye
 
 You will be prompted for a password. Enter the SSH password that you are provided with.
 
+**_Note: Windows users, do not copy password from Notepad. Open in SQL Developer or a better text editor._**
+
 ![](img/setup_new_connection_4.png)
 
 If everything goes well you should see a `Status: Success` in the bottom left corner of the window.
